@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="main.html" class="inter-s-bold">Travilin</a>
+        <div class="header-links">
+            <a href="hotels.html">Отели</a>
+            <a href="#">Предложения</a>
+            <a href="directions.html">Направления</a>
+            <a href="#">Акции</a>
+            <a href="tours.html">Туры</a>
+            <a href="travel-guide.html">Путеводитель</a>
+        </div>
+        <button><a href="sign-up.html">регистрация</a>/<a href="sign-in">вход</a></button>
+    </header>
+    <main class="main-page">
+        <section class="hello-window">
+            <h1>Поможем подобрать лучший отель и осуществить поездку вашей мечты </h1>
+        </section>
+        <section class="search">
+            <form action="GET">
+                <div class="search__where form-icon-input-centered">
+                    <img src="img/main/search-icon.png" alt="search-icon">
+                    <input type="text" placeholder="Куда бы вы хотели поехать?">
+                </div>
+                <div class="search__parameters">
+                    <div class="search__select-date">
+                        <img src="img/main/select-date-icon.png" alt="select-date">
+                        <input type="date" id="datePicker">
+                        <label for="datePicker">Оформить на дату</label>
+                    </div>
+                    <div class="search-search__persons">
+                        <img src="img/main/how-persons-icon.png" alt="how-persons">
+                        <select name="how-persons" id="how-persons">2 человека
+                            <option value="3">3 </option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="search-search__persons">
+                        <img src="img/main/how-kids-icon.png" alt="how-kids">
+                        <select name="how-persons" id="how-persons">1 ребёнка
+                            <option value="3">3 </option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                </div>
+                <button>Поиск</button>
+            </form>
+        </section>
+        <section class="small-recomendations">
+            <a href="#" class="small-recomendation__block">
+                <img src="img/main/guide-to-choosing-a-hotel.png" alt="guide-to-choosing-a-hotel">
+                <p>Руководство по выбору отеля</p>
+            </a>
+            <a href="#" class="small-recomendation__block">
+                <img src="img/main/travel-guide-to-europe.png" alt="travel-guide-to-europe">
+                <p>Путеводитель по Европе</p>
+            </a>
+            <a href="#" class="small-recomendation__block">
+                <img src="img/main/placees-worth-visiting.png" alt="placees-worth-visiting">
+                <p>Места, которые стоит посетить</p>
+            </a>
+        </section>
+        <section class="the-best-offers-of-the-company">
+            <h2>Лучшие предложения на Travilin</h2>
+            <div class="the-best-offers-of-the-company__blocks">
+                <div class="the-best-offers-of-the-company__block">
+                    <img src="img/main/mandarin-oriental.png" alt="mandarin-oriental">
+                    <p class="inter-light">МЮНХЕН, ГЕРМАНИЯ</p>
+                    <p>Mandarin Oriental</p>
+                    <p class="inter-thin">Mandarin Oriental в Мюнхене расположен в здании оперного театра 19-го века,
+                        известном своей
+                        величественной архитектурой.</p>
+                    <a href="#"><button>Подробнее</button></a>
+                </div>
+                <div class="the-best-offers-of-the-company__block">
+                    <img src="img/main/belmond-caruso.png" alt="belmond-caruso">
+                    <p class="inter-light">ПОБЕРЕЖЬЕ АМАЛЬФИ, ИТАЛИЯ</p>
+                    <p>Belmond Caruso</p>
+                    <p class="inter-thin">Отель расположен на побережье, в самой высокой точке Равелло (350 метров над
+                        уровнем моря)</p>
+                    <a href="#"><button>Подробнее</button></a>
+                </div>
+                <div class="the-best-offers-of-the-company__block">
+                    <img src="img/main/hotel-lutetia.png" alt="hotel-lutetia">
+                    <p class="inter-light">Париж, франция</p>
+                    <p>Hôtel Lutetia</p>
+                    <p class="inter-thin">Отель Lutetia на Левом берегу, который открылся в 1910 году. В нём
+                        останавливались всё тот же Хемингуэй, а так же Альбер Камю, Анри Матисс и многие другие.</p>
+                    <a href="#"><button>Подробнее</button></a>
+                </div>
+            </div>
+        </section>
+        <section class="popular-sections">
+            <h2>Популярные разделы</h2>
+            <div class="popular-sections__blocks">
+                <div class="popular-sections__block"><a href="#" class="inter-s-bold">Популярные отели</a></div>
+                <div class="popular-sections__block"><a href="#" class="inter-s-bold">Туристические места</a></div>
+                <div class="popular-sections__block"><a href="#" class="inter-s-bold">Горнолыжные корорты</a></div>
+                <div class="popular-sections__block"><a href="#" class="inter-s-bold">Лечебный отдых</a></div>
+                <div class="popular-sections__block"><a href="#" class="inter-s-bold">Недорогие отели</a></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-number">
+            <img src="img/main/call-icon.png" alt="call-icon">
+            <p class="inter-bold">Узнайте подробнее по телефону +2 384 269 71</p>
+        </div>
+        <div class="footer-links">
+            <div class="footer-link__block">
+                <p class="inter-bold">О КОМПАНИИ</p>
+                <div class="footer-link__block-links">
+                    <a href="#" class="inter-light">О НАС</a>
+                    <a href="#" class="inter-light">НАША ИСТОРИЯ</a>
+                    <a href="#" class="inter-light">ПОЧЕМУ СТОИТ ВЫБРАТЬ НАС</a>
+                    <a href="#" class="inter-light">ОТЗЫВЫ КЛИЕНТОВ</a>
+                    <a href="#" class="inter-light">НАШИ ПАРТНЁРЫ</a>
+                </div>
+            </div>
+            <div class="footer-link__block">
+                <p class="inter-bold">КОНТАКТЫ</p>
+                <div class="footer-link__block-links">
+                    <a href="#" class="inter-light">СВЯЗАТЬСЯ С НАМИ</a>
+                    <a href="#" class="inter-light">НАШИ ОФИСЫ</a>
+                    <a href="#" class="inter-light">ТЕЛЕФОНЫ И ПОЧТА</a>
+                    <a href="#" class="inter-light">КОНТАКТЫ РУКОВОДСТВА</a>
+                    <a href="#" class="inter-light">СОТРУДНИЧЕСТВО</a>
+                </div>
+            </div>
+            <div class="footer-link__block">
+                <p class="inter-bold">ПЕРСОНАЛЬНЫЕ ПРЕДЛОЖЕНИЯ</p>
+                <div class="footer-link__block-links">
+                    <a href="#" class="inter-light">ГОТОВЫЕ ТУРЫ</a>
+                    <a href="#" class="inter-light">РАНЕЕ БРОНИРОВАНИЕ</a>
+                    <a href="#" class="inter-light">СЕЗОННЫЕ СКИДКИ</a>
+                    <a href="#" class="inter-light">ПОДАРОЧНЫЕ СЕРТЕФИКАТЫ</a>
+                    <a href="#" class="inter-light">КЛУБНАЯ КАРТА</a>
+                </div>
+            </div>
+            <div class="footer-link__block">
+                <p class="inter-bold">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</p>
+                <div class="footer-link__block-links">
+                    <a href="#" class="inter-light">ВИЗОВЫЕ УСЛОВИЯ</a>
+                    <a href="#" class="inter-light">СТРАХОВАНИЕ КЛИЕНТОВ</a>
+                    <a href="#" class="inter-light">ОБМЕН ВАЛЮТ ЗА ГРАНИЦЕЙ</a>
+                    <a href="#" class="inter-light">БЕЗОПАСНОСТЬ И ВАКЦИНАЦИЯ</a>
+                    <a href="#" class="inter-light">СОВЕТЫ ДЛЯ КОМФОРТНОГО ПЕРЕЛЁТА</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-additionally">
+            <div class="footer-additionally__links">
+                <a href="#" class="inter-light">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</a>
+                <a href="#" class="inter-light">АГЕНСТВА</a>
+                <a href="gifts.html" class="inter-light">ПОДАРОЧНЫЕ КАРТЫ</a>
+                <a href="#" class="inter-light">КАРЬЕРА С НАМИ</a>
+            </div>
+            <div class="footer-additionally__social-networks">
+                <a href="#"><img src="img/main/instagram-icon.png" alt="instagram-icon"></a>
+                <a href="#"><img src="img/main/twitter-icon.png" alt="twitter-icon"></a>
+                <a href="#"><img src="img/main/facebook-icon.png" alt="facebook-icon"></a>
+                <a href="#"><img src="img/main/youtube-icon.png" alt="youtube-icon"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
