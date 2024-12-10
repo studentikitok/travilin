@@ -30,7 +30,7 @@
         </section>
         <section class="search">
             <form action="GET">
-                <div class="search__where form-icon-input-centered">
+                <div class="search__where">
                     <img src="img/main/search-icon.png" alt="search-icon">
                     <input type="text" placeholder="Куда бы вы хотели поехать?">
                 </div>
@@ -42,17 +42,21 @@
                     </div>
                     <div class="search-search__persons">
                         <img src="img/main/how-persons-icon.png" alt="how-persons">
-                        <select name="how-persons" id="how-persons">2 человека
-                            <option value="3">3 </option>
-                            <option value="4">4</option>
+                        <select id="how-persons">2 человека
+                            <option value="1">1</option>
+                            <option value="2">3</option>
+                            <option value="3">3</option>
                         </select>
+                        <label for="datePicker">Оформить на дату</label>
                     </div>
-                    <div class="search-search__persons">
+                    <div class="search-search__kids">
                         <img src="img/main/how-kids-icon.png" alt="how-kids">
-                        <select name="how-persons" id="how-persons">1 ребёнка
-                            <option value="3">3 </option>
-                            <option value="4">4</option>
+                        <select id="how-kids">
+                            <option value="1">1</option>
+                            <option value="2">3</option>
+                            <option value="3">3</option>
                         </select>
+                        <label for="how-kids">1 ребёнок</label>
                     </div>
                 </div>
                 <button>Поиск</button>

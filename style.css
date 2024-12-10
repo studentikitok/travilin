@@ -89,9 +89,28 @@ header {
     color: white;
 }
 
+.search {
+    display: flex;
+    justify-content: center;
+
+}
+
+.search>form {
+    display: flex;
+    width: 1440px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
 form {
     font-size: 14px;
     color: #575757;
+}
+
+.search__where {
+    width: 250px;
 }
 
 input {
@@ -104,18 +123,23 @@ input:focus {
     outline: none;
 }
 
-.form-icon-input-centered {
+.search__parameters {
+    display: flex;
+    gap: 75px;
+}
+
+.search__where,
+.search__select-date,
+.search-search__persons,
+.search-search__kids {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.search__select-date {
-    position: relative;
-    display: inline-block;
-}
-
-input[type="date"] {
+input[type="date"],
+select {
     position: absolute;
     top: 0;
     left: 0;
@@ -125,17 +149,10 @@ input[type="date"] {
     cursor: pointer;
 }
 
-.custom-date-label {
+.custom-label {
     display: inline-block;
     cursor: pointer;
 }
-
-
-
-
-
-
-
 
 .small-recomendations {
     display: flex;
@@ -269,7 +286,7 @@ input[type="date"] {
     grid-column: 3;
 }
 
-.contact-number{
+.contact-number {
     font-size: 14px;
     color: white;
     background-color: #2B3540;
@@ -279,32 +296,32 @@ input[type="date"] {
     gap: 8px;
 }
 
-.footer-links{
+.footer-links {
     padding: 55px calc((100% - 1161px) / 2) 173px;
     background-color: #19242F;
     display: flex;
     justify-content: space-between;
 }
 
-.footer-link__block p{
+.footer-link__block p {
     font-size: 12px;
     letter-spacing: 1.7px;
     margin-bottom: 28px;
     color: white;
 }
 
-.footer-link__block-links{
+.footer-link__block-links {
     display: flex;
     flex-direction: column;
     gap: 22px;
 }
 
-.footer-link__block-links a{
+.footer-link__block-links a {
     font-size: 12px;
     letter-spacing: 1.7px;
 }
 
-.footer-additionally{
+.footer-additionally {
     background-color: #2B3540;
     display: flex;
     flex-direction: column;
@@ -313,13 +330,59 @@ input[type="date"] {
     padding: 24px 0 45px;
 }
 
-.footer-additionally__links{
+.footer-additionally__links {
     gap: 70px;
     display: flex;
 }
 
-.footer-additionally__social-networks{
+.footer-additionally__social-networks {
     display: flex;
     gap: 60px;
 }
 
+@media (max-width: 1450px) {
+    .header-links {
+        gap: 30px;
+    }
+
+    .search__parameters {
+        gap: 30px;
+    }
+
+    .search>form {
+        width: 900px;
+    }
+
+    .the-best-offers-of-the-company__blocks {
+        gap: 15px;
+    }
+
+    .the-best-offers-of-the-company__block,
+    .the-best-offers-of-the-company__block img {
+        width: 350px;
+    }
+
+    .the-best-offers-of-the-company__block:nth-of-type(2) button {
+        margin-top: 89px;
+    }
+
+    .the-best-offers-of-the-company__block button {
+        margin-top: 65px;
+    }
+
+    .the-best-offers-of-the-company__block button {
+        margin-top: 65px;
+    }
+    .popular-sections__blocks{
+        gap: 15px;
+    }
+    .popular-sections__block:first-of-type{
+        width: 704px;
+        height: 100%;
+    }
+    .popular-sections__blocks>.popular-sections__block:nth-of-type(5){
+        height: 523px;
+    }
+}
+
+@media (max-width: 1150px) {}
