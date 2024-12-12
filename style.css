@@ -664,6 +664,56 @@ header {
     width: 190px;
 }
 
+/* .gifts.html */
+.gifts-page>.hello-window {
+    background-image: url('img/gifts/welcome-background.png');
+}
+
+.gifts {
+    display: flex;
+    flex-direction: column;
+    padding: 0 calc((100% - 1440px) / 2);
+    margin-bottom: 134px;
+}
+
+.gifts>p {
+    color: #575757;
+    font-size: 30px;
+    margin-top: 82px;
+    margin-bottom: 79px;
+}
+
+.gifts__blocks {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 90px 45px 113px;
+    width: 1350px;
+    display: grid;
+    grid-template-columns: repeat(3, 342px);
+    align-self: center;
+    justify-content: space-between;
+    gap: 85px;
+}
+
+.gifts__blocks-block {
+    width: 342px;
+}
+
+.gifts__blocks-block p {
+    font-weight: 100;
+    line-height: 24px;
+}
+
+.gifts__blocks-block p:first-of-type {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.gifts__blocks-block p:last-of-type {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
 @media (max-width: 1450px) {
     .header-links {
         gap: 30px;
@@ -729,6 +779,16 @@ header {
     /* travel-guide.html */
     .travel-guide>p {
         padding: 0 calc((100% - 900px) / 2);
+    }
+
+    /* gifts.html */
+    .gifts {
+        padding: 0 calc((100% - 900px) / 2);
+    }
+    
+    .gifts__blocks {
+        width: 810px;
+        grid-template-columns: repeat(2, 342px);
     }
 }
 
@@ -812,6 +872,15 @@ header {
         margin-top: 30px;
     }
 
+    /* gifts.html */
+    .gifts {
+        margin-bottom: 90px;
+    }
+
+    .gifts>p {
+        margin-top: 70px;
+        margin-bottom: 60px;
+    }
 
 }
 
@@ -957,6 +1026,17 @@ header {
     /* travel-guide.html */
     .travel-guide>p {
         padding: 0 calc((100% - 550px) / 2);
+    }
+
+    /* gifts.hmtl */
+    .gifts {
+        padding: 0 calc((100% - 550px) / 2);
+    }
+    
+    .gifts__blocks {
+        width: 460px;
+        grid-template-columns: 342px;
+        justify-content: center;
     }
 }
 
@@ -1140,5 +1220,25 @@ header {
     .travel-guide__blocks-block__information p {
         width: 340px;
         height: 240px;
+    }
+
+    /* gifts.html */
+    .gifts>p {
+        text-align: center;
+    }
+    
+    
+    .gifts__blocks {
+        width: 290px;
+        grid-template-columns: 290px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        gap: 60px;
+    }
+    .gifts__blocks-block{
+        width: 290px;
+    }
+    .gifts__blocks img{
+        width: 290px;
     }
 }
