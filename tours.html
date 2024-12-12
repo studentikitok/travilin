@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подарочные карты</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="main.html" class="inter-s-bold">Travilin</a>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="burger-icon">&#9776;</label>
+        <nav class="header-links">
+            <a href="hotels.html">Отели</a>
+            <a href="#">Предложения</a>
+            <a href="directions.html">Направления</a>
+            <a href="#">Акции</a>
+            <a href="tours.html">Туры</a>
+            <a href="travel-guide.html">Путеводитель</a>
+        </nav>
+        <button class="inter-s-bold"><a href="sign-up.html">регистрация</a>/<a href="sign-in.html">вход</a></button>
+    </header>
+    <main class="tours-page">
+        <section class="hello-window">
+            <h1>Большое путешествие для огромных впечетлений</h1>
+        </section>
+        <section class="search">
+            <form action="GET">
+                <div class="search__where">
+                    <img src="img/main/search-icon.png" alt="search-icon">
+                    <input type="text" placeholder="Куда бы вы хотели поехать?">
+                </div>
+                <div class="search__parameters">
+                    <div class="search__select-date">
+                        <img src="img/main/select-date-icon.png" alt="select-date">
+                        <input type="date" id="datePicker">
+                        <label for="datePicker">Оформить на дату</label>
+                    </div>
+                    <div class="search-search__persons">
+                        <img src="img/main/how-persons-icon.png" alt="how-persons">
+                        <select id="how-persons">
+                            <option value="1">1</option>
+                            <option value="2">3</option>
+                            <option value="3">3</option>
+                        </select>
+                        <label for="datePicker">2 человека</label>
+                    </div>
+                    <div class="search-search__kids">
+                        <img src="img/main/how-kids-icon.png" alt="how-kids">
+                        <select id="how-kids">
+                            <option value="1">1</option>
+                            <option value="2">3</option>
+                            <option value="3">3</option>
+                        </select>
+                        <label for="how-kids">1 ребёнок</label>
+                    </div>
+                </div>
+                <button class="inter-s-bold">Поиск</button>
+            </form>
+        </section>
+        <section class="tours">
+            <p>Популярные туры на Travilin</p>
+            <div class="tours__blocks">
+                <div class="tours__blocks-block">
+                    <img src="img/tours/spain.png" alt="spain">
+                    <div class="tours__blocks-block__information">
+                        <p>Большое путешествие по Испании</p>
+                        <p class="inter-light">Из Москвы</p>
+                        <p class="inter-thin">Маршрут тура: Барселона &mdash; Монсеррат &mdash; Сарагоса &mdash; Памплона &mdash; Страна Басков &mdash; Бильбао &mdash; Сан
+                            Себастьян &mdash; Бургос &mdash; Мадрид &mdash; Эскориал &mdash; Сеговия &mdash; Толедо &mdash; Кордова &mdash; Севилья &mdash; Ронда &mdash;
+                            Гранада &mdash; Валенсия &mdash; Пеньискола &mdash; Барселона</p>
+                        <a href="#"><button class="inter-s-bold">Подробнее</button></a>
+                    </div>
+                </div>
+                <div class="tours__blocks-block">
+                    <img src="img/tours/portugal.png" alt="portugal">
+                    <div class="tours__blocks-block__information">
+                        <p>Тур по Португалии</p>
+                        <p class="inter-light">Из Лиссабона</p>
+                        <p class="inter-thin">Маршрут тура: Португалия</p>
+                        <a href="#"><button class="inter-s-bold">Подробнее</button></a>
+                    </div>
+                </div>
+                <div class="tours__blocks-block">
+                    <img src="img/tours/norway.png" alt="norway">
+                    <div class="tours__blocks-block__information">
+                        <p>Большой трекинг-тур по Норвегии</p>
+                        <p class="inter-light">Из Мурманска</p>
+                        <p class="inter-thin">Маршрут тура: пеший путешествие по горам Норвегии</p>
+                        <a href="#"><button class="inter-s-bold">Подробнее</button></a>
+                    </div>
+                </div>
+                <div class="tours__blocks-block">
+                    <img src="img/tours/portugal.png" alt="portugal">
+                    <div class="tours__blocks-block__information">
+                        <p>Тур по европе</p>
+                        <p class="inter-light">Из Москвы</p>
+                        <p class="inter-thin">Маршрут тура: Испания, Италия, Франция, Барселона</p>
+                        <a href="#"><button class="inter-s-bold">Подробнее</button></a>
+                    </div>
+                </div>
+                <a href="#" class="tours__more-offers"><button>Больше предложений</button></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-number">
+            <img src="img/main/call-icon.png" alt="call-icon">
+            <p class="inter-bold">Узнайте подробнее по телефону +2 384 269 71</p>
+        </div>
+        <div class="footer-links">
+            <div class="footer-link__block">
+                <p class="inter-bold">О КОМПАНИИ</p>
+                <div class="footer-link__block-links">
+                    <a href="#" class="inter-light">О НАС</a>
+                    <a href="#" class="inter-light">НАША ИСТОРИЯ</a>
+                    <a href="#" class="inter-light">ПОЧЕМУ СТОИТ ВЫБРАТЬ НАС</a>
+                    <a href="#" class="inter-light">ОТЗЫВЫ КЛИЕНТОВ</a>
+                    <a href="#" class="inter-light">НАШИ ПАРТНЁРЫ</a>
+                </div>
+            </div>
+            <div class="footer-link__block">
+                <p class="inter-bold">КОНТАКТЫ</p>
+                <div class="footer-link__block-links">
+                    <a href="#" class="inter-light">СВЯЗАТЬСЯ С НАМИ</a>
+                    <a href="#" class="inter-light">НАШИ ОФИСЫ</a>
+                    <a href="#" class="inter-light">ТЕЛЕФОНЫ И ПОЧТА</a>
+                    <a href="#" class="inter-light">КОНТАКТЫ РУКОВОДСТВА</a>
+                    <a href="#" class="inter-light">СОТРУДНИЧЕСТВО</a>
+                </div>
+            </div>
+            <div class="footer-link__block">
+                <p class="inter-bold">ПЕРСОНАЛЬНЫЕ ПРЕДЛОЖЕНИЯ</p>
+                <div class="footer-link__block-links">
+                    <a href="#" class="inter-light">ГОТОВЫЕ ТУРЫ</a>
+                    <a href="#" class="inter-light">РАНЕЕ БРОНИРОВАНИЕ</a>
+                    <a href="#" class="inter-light">СЕЗОННЫЕ СКИДКИ</a>
+                    <a href="#" class="inter-light">ПОДАРОЧНЫЕ СЕРТЕФИКАТЫ</a>
+                    <a href="#" class="inter-light">КЛУБНАЯ КАРТА</a>
+                </div>
+            </div>
+            <div class="footer-link__block">
+                <p class="inter-bold">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</p>
+                <div class="footer-link__block-links">
+                    <a href="#" class="inter-light">ВИЗОВЫЕ УСЛОВИЯ</a>
+                    <a href="#" class="inter-light">СТРАХОВАНИЕ КЛИЕНТОВ</a>
+                    <a href="#" class="inter-light">ОБМЕН ВАЛЮТ ЗА ГРАНИЦЕЙ</a>
+                    <a href="#" class="inter-light">БЕЗОПАСНОСТЬ И ВАКЦИНАЦИЯ</a>
+                    <a href="#" class="inter-light">СОВЕТЫ ДЛЯ КОМФОРТНОГО ПЕРЕЛЁТА</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-additionally">
+            <div class="footer-additionally__links">
+                <a href="#" class="inter-light">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</a>
+                <a href="#" class="inter-light">АГЕНСТВА</a>
+                <a href="gifts.html" class="inter-light">ПОДАРОЧНЫЕ КАРТЫ</a>
+                <a href="#" class="inter-light">КАРЬЕРА С НАМИ</a>
+            </div>
+            <div class="footer-additionally__social-networks">
+                <a href="#"><img src="img/main/instagram-icon.png" alt="instagram-icon"></a>
+                <a href="#"><img src="img/main/twitter-icon.png" alt="twitter-icon"></a>
+                <a href="#"><img src="img/main/facebook-icon.png" alt="facebook-icon"></a>
+                <a href="#"><img src="img/main/youtube-icon.png" alt="youtube-icon"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
